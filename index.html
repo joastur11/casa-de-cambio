@@ -8,10 +8,43 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body>
+    <h1> Cambio a la fecha </h1>
+        <label for="fecha-ingresada"> <strong>Ingrese una fecha:</strong></label>
+        <input type="date" id="fecha-ingresada" min="2000-01-01" max="2025-05-05"/>
+        <label for="moneda-usuario"> <strong>Elija su moneda:</strong></label>
+        <select id="moneda-usuario">
+            <option value="USD" class="moneda-origen">USD</option>
+            <option value="EUR" class="moneda-origen">EUR</option>
+            <option value="GBP" class="moneda-origen">GBP</option>
+            <option value="JPY" class="moneda-origen">JPY</option>
+            <option value="CNY" class="moneda-origen">CNY</option>
+            <option value="KRW" class="moneda-origen">KRW</option>
+            <option value="AUD" class="moneda-origen">AUD</option>
+            <option value="BRL" class="moneda-origen">BRL</option>
+            <option value="CAD" class="moneda-origen">CAD</option>
+        </select>
+        <label for="moneda-cambio"> <strong>A que moneda quiere cambiar?</strong></label>
+        <select id="moneda-cambio">
+            <option value="USD" class="moneda-destino">USD</option>
+            <option value="EUR" class="moneda-destino">EUR</option>
+            <option value="GBP" class="moneda-destino">GBP</option>
+            <option value="JPY" class="moneda-destino">JPY</option>
+            <option value="CNY" class="moneda-destino">CNY</option>
+            <option value="KRW" class="moneda-destino">KRW</option>
+            <option value="AUD" class="moneda-destino">AUD</option>
+            <option value="BRL" class="moneda-destino">BRL</option>
+            <option value="CAD" class="moneda-destino">CAD</option>
+        </select>
+    <div>
+        <p>Elija la misma moneda si solo quiere saber la cotizacion.</p>
+    </div>
+    <div>
+        <button id="calcular-cambio">Calcular cambio</button>
+    </div>
+    <div id="resultado"> <!-- --> </div>
 
 
 
-    
     <script src='index.js'></script>
 </body>
 </html>
